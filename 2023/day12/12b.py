@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 import sys
-from functools import lru_cache
+from functools import cache
 
-@lru_cache(maxsize=None)
+@cache
 def num_arrs(arr, sizes, size_index):
     if size_index == len(sizes):
         if not '#' in arr:
